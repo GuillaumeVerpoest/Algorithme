@@ -1,12 +1,12 @@
-class Fibonacci {
+internal class Fibonacci {
     var n:Int
     // MARK: - INITIALISATION
-    init(n:Int) {
+    fileprivate init(n:Int) {
         self.n = n
     }
     
     // MARK: -RECURSIVE
-    func recursive(n:Int = instance.n) -> Int
+     fileprivate func recursive(n:Int = instance.n) -> Int
     {
         if n == 0
         {
@@ -23,7 +23,7 @@ class Fibonacci {
 
     }
     // MARK: - BOTTOM_TOP
-    func bottom_top(n:Int = instance.n) -> Int
+    fileprivate func bottom_top(n:Int = instance.n) -> Int
     {
         var array = [0,1]
         for index in Range(2...n) {
@@ -33,7 +33,7 @@ class Fibonacci {
         return array[n]
     }
     // MARK: - ITERATION
-    func iteration(i:Int = instance.n) ->Int
+    fileprivate func iteration(i:Int = instance.n) ->Int
     {
         var cpt: Int = n-1
         var first: Int = 0
