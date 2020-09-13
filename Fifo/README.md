@@ -84,6 +84,6 @@ Appending the value in the **FIFO**
 
 ----------------
 
-<img src="Screenshot.png">
+<img src="Src/Screenshot.png">
 
 
